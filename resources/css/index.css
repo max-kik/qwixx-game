@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8e8e8;
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-container-width {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .flex-container-width {
+        max-width: 600px;
+    }
+
+    .small-screen {
+        display: none;
+    }
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.board {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.lane {
+    display: flex;
+    padding: 10px;
+    column-gap: 2px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.score {
+    background-color: #fff;
+    padding: 2px 4px;
+    border-radius: 4px;
+    text-align: center;
+    border: 2px solid #909194;
+}
+
+.bg-red {
+    background-color: #d01b23;
+    color: #d01b23;
+}
+
+.bg-yellow {
+    background-color: #ffd900;
+    color: #ffd900;
+}
+
+.bg-green {
+    background-color: #00ae4d;
+    color: #00ae4d;
+}
+
+.bg-blue {
+    background-color: #035899;
+    color: #035899;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-light-blue {
+    background-color: #00bbf2;
+}
+
+.dices {
+    margin-top: 10px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #e8e8e8;
+    gap: 20px;
+}
+
+.dice {
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+}
+
+.throw {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.th {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.br-red {
+    border: 3px solid #d01b23;
+}
+
+.br-yellow {
+    border: 3px solid #ffd900;
+}
+
+.br-green {
+    border: 3px solid #00ae4d;
+}
+
+.br-blue {
+    border: 3px solid #035899;
+}
+
+.br-grey {
+    border: 3px solid #e8e8e8;
+}
+
+.br-black {
+    border: 3px solid #000;
+}
+
+.throws {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.th {
+    background-color: #00ae4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#H1 {
+    background-color: #d3b301;
+}
+
+.error-message {
+    margin-top: 15px;
+    color: #d01b23;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-end {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.again {
+    padding: 10px 20px;
+    background-color: #00ae4d;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}

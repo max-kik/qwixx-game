@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qwixx</title>
+    <link href="resources/css/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="flex-container">
+
+        <div class="small-screen">
+            Je scherm is helaas te klein om dit spel op te spelen.
+        </div>
+
+        <div class="flex-container-width">
+
+            <div class="game-end" id="I1">
+                <h1>Klaar!</h1>
+                <h2>Je eindscore is <span id="I2"></span>.</h2>
+                <div class="again" id="I3">Nog een keertje?</div>
+            </div>
+
+            <div class="board">
+
+                <div class="lane bg-red">
+                    <div class="block" id="A1">2</div>
+                    <div class="block" id="A2">3</div>
+                    <div class="block" id="A3">4</div>
+                    <div class="block" id="A4">5</div>
+                    <div class="block" id="A5">6</div>
+                    <div class="block" id="A6">7</div>
+                    <div class="block" id="A7">8</div>
+                    <div class="block" id="A8">9</div>
+                    <div class="block" id="A9">10</div>
+                    <div class="block" id="A10">11</div>
+                    <div class="block" id="A11">12</div>
+                </div>
+
+                <div class="lane bg-yellow">
+                    <div class="block" id="B1">2</div>
+                    <div class="block" id="B2">3</div>
+                    <div class="block" id="B3">4</div>
+                    <div class="block" id="B4">5</div>
+                    <div class="block" id="B5">6</div>
+                    <div class="block" id="B6">7</div>
+                    <div class="block" id="B7">8</div>
+                    <div class="block" id="B8">9</div>
+                    <div class="block" id="B9">10</div>
+                    <div class="block" id="B10">11</div>
+                    <div class="block" id="B11">12</div>
+                </div>
+
+                <div class="lane bg-green">
+                    <div class="block" id="C1">12</div>
+                    <div class="block" id="C2">11</div>
+                    <div class="block" id="C3">10</div>
+                    <div class="block" id="C4">9</div>
+                    <div class="block" id="C5">8</div>
+                    <div class="block" id="C6">7</div>
+                    <div class="block" id="C7">6</div>
+                    <div class="block" id="C8">5</div>
+                    <div class="block" id="C9">4</div>
+                    <div class="block" id="C10">3</div>
+                    <div class="block" id="C11">2</div>
+                </div>
+
+                <div class="lane bg-blue">
+                    <div class="block" id="D1">12</div>
+                    <div class="block" id="D2">11</div>
+                    <div class="block" id="D3">10</div>
+                    <div class="block" id="D4">9</div>
+                    <div class="block" id="D5">8</div>
+                    <div class="block" id="D6">7</div>
+                    <div class="block" id="D7">6</div>
+                    <div class="block" id="D8">5</div>
+                    <div class="block" id="D9">4</div>
+                    <div class="block" id="D10">3</div>
+                    <div class="block" id="D11">2</div>
+                </div>
+
+                <div class="lane">
+                    <div>
+                        Kruisjes
+                        <hr>
+                        Punten
+                    </div>
+                    <div class="score">
+                        1x
+                        <hr>
+                        1
+                    </div>
+                    <div class="score">
+                        2x
+                        <hr>
+                        3
+                    </div>
+                    <div class="score">
+                        3x
+                        <hr>
+                        6
+                    </div>
+                    <div class="score">
+                        4x
+                        <hr>
+                        10
+                    </div>
+                    <div class="score">
+                        5x
+                        <hr>
+                        15
+                    </div>
+                    <div class="score">
+                        6x
+                        <hr>
+                        21
+                    </div>
+                    <div class="score">
+                        7x
+                        <hr>
+                        28
+                    </div>
+                    <div class="score">
+                        8x
+                        <hr>
+                        36
+                    </div>
+
+                    <div class="score">
+                        9x
+                        <hr>
+                        45
+                    </div>
+
+                    <div class="score">
+                        10x
+                        <hr>
+                        55
+                    </div>
+
+                    <div class="score">
+                        11x
+                        <hr>
+                        66
+                    </div>
+
+                    <div class="score">
+                        12x
+                        <hr>
+                        78
+                    </div>
+
+                </div>
+
+                <div class="lane bg-light-blue">
+                    score
+                    <div class="block br-red" id="E1">0</div>
+                    +
+                    <div class="block br-yellow" id="E2">0</div>
+                    +
+                    <div class="block br-green" id="E3">0</div>
+                    +
+                    <div class="block br-blue" id="E4">0</div>
+                    -
+                    <div class="block br-grey" id="E5">0</div>
+                    =
+                    <div class="block br-black" id="E6">0</div>
+                </div>
+
+            </div>
+
+            <div class="dices">
+                <div class="dice bg-red" id="F1">-</div>
+                <div class="dice bg-yellow" id="F2">-</div>
+                <div class="dice bg-green" id="F3">-</div>
+                <div class="dice bg-blue" id="F4">-</div>
+                <div class="dice bg-white" id="F5">-</div>
+                <div class="dice bg-white" id="F6">-</div>
+            </div>
+
+            <div class="throws">
+                <span id="throws">0</span>x
+            </div>
+
+            <div class="throw">
+                <div class="th" id="G1">
+                    Gooi
+                </div>
+            </div>
+
+            <div class="throw">
+                <div class="th" id="H1">
+                    Beurt overslaan
+                </div>
+            </div>
+
+            <div class="error-message" id="error">
+            </div>
+
+        </div>
+        <script src="resources/js/main.js"></script>
+</body>
+
+</html>
