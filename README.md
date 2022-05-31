@@ -1,4 +1,4 @@
-![Picture of the game]([https://www.maxkik.nl/resources/img/projects/qwixx/mockup.png])
+![Picture of the game](https://www.maxkik.nl/resources/img/projects/qwixx/mockup.png)
 
 # Qwixx game
 
